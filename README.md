@@ -19,3 +19,43 @@
 -   run migrations: php artisan migrate
 
 ## Relations Model
+
+-   Generate models' nivel relations
+-   example:
+    <br>
+
+        //Relations 1:N (inverse) a post belong to a user.
+
+        public function user(): BelongsTo
+        {
+            return $this->belongsTo(User::class);
+        }
+
+        //Relations 1:N (inverse) a post belong to a category.
+
+        public function category(): BelongsTo
+        {
+            return $this->belongsTo(Category::class);
+        }
+
+        //Relations N:N, many posts belong to many tags
+
+        public function tags(): BelongsToMany
+        {
+            return $this->belongsToMany(Tag::class);
+        }
+
+        //Relations 1:1 Polimorfica
+
+        public function image(): MorphOne
+        {
+            return $this->morphOne(Image::class, 'imageable');
+        }
+
+## Add factories, test's data
+
+-   https://www.youtube.com/watch?v=eC8rDAiT1OM&list=PLZ2ovOgdI-kWWS9aq8mfUDkJRfYib-SvF&index=50
+-   php artisan make:factory CategoryFactory
+-   php artisan make:factory PostFactory
+-   php artisan make:factory TagFactory
+-   php artisan make:factory ImageFactory
