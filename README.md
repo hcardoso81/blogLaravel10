@@ -59,3 +59,7 @@
 -   php artisan make:factory PostFactory
 -   php artisan make:factory TagFactory
 -   php artisan make:factory ImageFactory
+
+-   change config/filesystems.php, because we need test's images.
+    <br>
+    'default' => env('FILESYSTEM_DISK', 'public'),
