@@ -62,4 +62,8 @@
 
 -   change config/filesystems.php, because we need test's images.
     <br>
-    'default' => env('FILESYSTEM_DISK', 'public'),
+    'default' => env('FILESYSTEM_DISK', 'public'),d
+
+-   Create Seeder User, php artisan make:seeder UserSeeder
+-   Create new Seeder: PostSeeder, php artisan make:seeder PostSeeder
+-   Delete all data, and generate new: php artisan migrate:fresh --seed

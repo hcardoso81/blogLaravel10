@@ -12,6 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('post_tag', function (Blueprint $table) {
+            $table->id();
             $table->unsignedBigInteger('post_id');
             $table->unsignedBigInteger('tag_id');
             $table->foreign('post_id')
