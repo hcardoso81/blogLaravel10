@@ -68,7 +68,8 @@
 -   Create new Seeder: PostSeeder, php artisan make:seeder PostSeeder
 -   Delete all data, and generate new: php artisan migrate:fresh --seed
 
-## Add Tailwind adn Alpine
+## Add Component Navigation: Tailwind and Alpine
 
 -   https://www.youtube.com/watch?v=WSA37Ui0b6Q&list=PLZ2ovOgdI-kWWS9aq8mfUDkJRfYib-SvF&index=51
 -   create Component navigation, php artisan make:livewire navigation
+-   Add behavior js. Opens and Closes Dropdown menu, signout, profile. If users not auth, then shows links login and register
