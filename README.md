@@ -73,3 +73,8 @@
 -   https://www.youtube.com/watch?v=WSA37Ui0b6Q&list=PLZ2ovOgdI-kWWS9aq8mfUDkJRfYib-SvF&index=51
 -   create Component navigation, php artisan make:livewire navigation
 -   Add behavior js. Opens and Closes Dropdown menu, signout, profile. If users not auth, then shows links login and register
+
+## Add All posts to home
+
+-   https://www.youtube.com/watch?v=hdBzjtaAgGE&list=PLZ2ovOgdI-kWWS9aq8mfUDkJRfYib-SvF&index=54
+-   Add PostController, php artisan make:controller PostController
